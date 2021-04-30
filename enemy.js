@@ -13,7 +13,7 @@ class Enemy {
     }
 
     move() {
-        this.x = this.x + this.dx;
-        this.y = this.y + this.dy;
+        this.x += this.dx;
+        this.y += this.dy;
     }
 }

@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98877257-42d1-4c2b-9707-bf082e90821c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/obstacle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obstacle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/player.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/plane.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/boss.js" beforeDir="false" afterPath="$PROJECT_DIR$/boss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy.js" beforeDir="false" afterPath="$PROJECT_DIR$/enemy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619770550584</updated>
-      <workItem from="1619770552018" duration="7111000" />
+      <workItem from="1619770552018" duration="12269000" />
     </task>
     <servers />
   </component>
