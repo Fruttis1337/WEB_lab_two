@@ -8,7 +8,7 @@ class Bullet {
     draw() {
         var bullet = new Image();
         bullet.src = 'Images/bullet.png'
-        context.drawImage(bullet, this.x, this.y, 13, 13);
+        context.drawImage(bullet, this.x, this.y, 15, 15);
     }
 
     move() {
@@ -16,25 +16,25 @@ class Bullet {
     }
 
     went_abroad() {
-        return this.x > 700;
+        return this.x > 900;
     }
 
     hit_item_or_enemy(object) {
-        return (this.x + 13 >= object.x && this.x <= object.x + 75) && (this.y + 13 >= object.y && this.y <= object.y + 75);
+        return (this.x + 15 >= object.x && this.x <= object.x + 75) && (this.y + 15 >= object.y && this.y <= object.y + 75);
     }
 
     colide() {
         var self = this;
         var collided = false;
-        enemy.forEach(function (enemy, i) {
+        enemies.forEach(function (enemy, i) {
             if (self.hit_item_or_enemy(enemy)) {
-                delete enemys[i];
+                delete enemies[i];
                 enemy_count--;
                 enemy_kills++;
                 collided = true;
                 current_score += 25;
             }
         });
-        enemys = enemys.filter(item => item !== undefined);
+        enemies = enemies.filter(item => item !== undefined);
     }
 }

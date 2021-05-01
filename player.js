@@ -6,7 +6,7 @@ class Player{
         this.dy = dy;
     }
     draw(){
-        context.drawImage(Img[z], this.x, this.y, 75, 75);
+        context.drawImage(Img, this.x, this.y, 75, 75);
         context.fillStyle = '#f20000';
         context.fillRect(this.x + 75/2 + 3, this.y + 75/2, 10, 10);
     }
