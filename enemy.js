@@ -9,7 +9,7 @@ class Enemy {
     draw() {
         var enemy = new Image();
         enemy.src = 'Images/enemy.png';
-        context.drawImage(enemy, this.x, this.y, 75, 75);
+        context.drawImage(enemy, this.x, this.y, 80, 80);
     }
 
     move() {

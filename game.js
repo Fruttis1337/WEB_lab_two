@@ -224,7 +224,7 @@ function enemyMove() {
         }
         if (enemies[i].y >= 525 || enemies[i].y < 0) enemies[i].dy = -enemies[i].dy
 
-        if (enemies[i].y + 75 > playerObject.y + 75 / 2 && enemies[i].y < playerObject.y + 75 - 75 / 2 && enemies[i].x + 75 > playerObject.x + 75 / 2 + 3 && enemies[i].x < playerObject.x + 75 - 75 / 2 + 3) {
+        if (enemies[i].y + 75 > playerObject.y + 75 / 2 && enemies[i].y < playerObject.y + 75 - 75 / 2 && enemies[i].x + 75 > playerObject.x + 75 / 2 + 3 && enemies[i].x < playerObject.x + 75 - (75 / 2 + 3)) {
             god_timer = 180
             playerHp--
             current_score -= 50
@@ -302,9 +302,9 @@ function bulletsMove() {
     }
     for (i in bullets) {
         bullets[i].move()
-        if (bullets[i].went_abroad() && bullets[i].colide()) {
+        if (bullets[i].went_abroad() || bullets[i].colide()) {
             delete bullets[i]
-        } else if (bosshp > -1 && bullets[i].x + 13 >= bossObject.x && bullets[i].x <= bossObject.x + 200 && bullets[i].y + 13 >= bossObject.y && bullets[i].y <= bossObject.y + 75) {
+        } else if (bosshp > -1 && bullets[i].x + 15 >= bossObject.x && bullets[i].x <= bossObject.x + 200 && bullets[i].y + 15 >= bossObject.y && bullets[i].y <= bossObject.y + 75) {
             delete bullets[i]
             current_score += 10
             bosshp--
@@ -368,6 +368,7 @@ function update() {
 }
 
 function render() {
+    context.clearRect(0, 0, 900, 600)
     context.drawImage(background, game_spped, 0, 600, 399, 0, 0, 900, 600)
     if (game_spped >= 600) {
         game_spped = 1

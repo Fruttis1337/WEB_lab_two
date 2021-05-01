@@ -1,5 +1,6 @@
 body {
-    background: #98FB98;
+    background: url("Images/forest.png");
+    background-size: cover;
 }
 
 #wrapper {
